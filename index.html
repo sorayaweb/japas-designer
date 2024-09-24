@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="Sua Vitrine Digital de Vendas!" />
+  <meta name="author" content="Desenvolvido por Soraya Cop" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Japas </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/custumer.css" rel="stylesheet" />
+  <link href="css/modal.css" rel="stylesheet" />
+
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+  <!-- HERO -->
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Japas
+            </span>
+          </a>
+
+          <!-- icon mobile -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+         
+          <!-- Header -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="#menu">Loja <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#location">Localização</a>
+              </li>
+            </ul>
+            <div class="nav-btn-cart">
+                <button id="myBtn" class="order_online" data-toggle="modal" data-target="#exampleModal">Pedido</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- slider section -->
+    <section class="slider_section " >
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1 style="color: black;">
+                      Seus Japas preferidos
+                    </h1>
+                    <p style="color: black;">
+                      Texto exemplo aqui: lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium debitis fugiat, corrupti ut excepturi quidem accusamus aperiam delectus, sequi possimus voluptatum unde.
+                    </p>
+                    <div class="btn-box">
+                      <a href="#menu" class="btn1">
+                        Fazer Pedido
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+<!-- MODAL BOOTSTRAP-->
+ <div class="modal fade bd-example-modal-xl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Seu Pedido</h2>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <ul class="responsive-table">
+
+          <li class="table-row">
+            <div class="col col-1"> <img src="./images/f1.png" width="70px" alt=""></div>
+            <div class="col col-2"> Combinado Especial <p>30 peças</p></div>
+            <div class="col col-3"> <b>R$ 91,00</b></div>
+            <div class="col col-4 quantity-control">
+              <button class="btn-decrement" style="background-color: #0a0a0ae2; color: #fff;">-</button>
+              <input type="text" value="1" class="quantity-input" readonly />
+              <button class="btn-increment" style="background-color: #0a0a0ae2; color: #fff;">+</button>
+            </div>         
+            <div class="col col-5"><button type="button"  class="btn btn-danger">Retirar</button></div>
+          </li>
+  
+          <li class="table-row">
+            <div class="col col-1"> <img src="./images/f2.png" width="70px" alt=""></div>
+            <div class="col col-2"> Hot Fila <p>10 peças</p></div>
+            <div class="col col-3"> <b>R$ 29,90</b></div>
+            <div class="col col-4 quantity-control">
+              <button class="btn-decrement" style="background-color: #0a0a0ae2; color: #fff;">-</button>
+              <input type="text" value="1" class="quantity-input" readonly />
+              <button class="btn-increment" style="background-color: #0a0a0ae2; color: #fff;">+</button>
+            </div>          
+            <div class="col col-5"><button type="button"  class="btn btn-danger">Retirar</button></div>
+          </li>
+         
+          <li class="table-footer">
+            <div class="col col-2"><b>TOTAL:</b></div>
+            <div class="col col-2" style="color: #d00d02;"> <b>R$ 120,90</b></div>
+          </li>
+          <br><br>
+        </ul>
+
+        <input type="text" class="form-control" style="margin-top: -60px;" id="inputAddress2" placeholder="Observações sobre o pedido...">
+
+        <h2 class="modal-title" id="exampleModalLabel">Dados para Entrega</h2>
+        <hr>
+
+      <form>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <select id="bairro" name="bairro" class="form-control">
+              <option value="">Selecione um bairro</option>
+              <option value="Catarcione">Catarcione</option>
+              <option value="Centro">Centro</option>
+              <option value="Conselheiro Paulino">Conselheiro Paulino</option>
+              <option value="Cordoeira">Cordoeira</option>
+              <option value="Cônego">Cônego</option>
+              <option value="Duas Pedras">Duas Pedras</option>
+              <option value="Jardim Ouro Preto">Jardim Ouro Preto</option>
+              <option value="Olaria">Olaria</option>
+              <option value="Ponte da Saudade">Ponte da Saudade</option>
+              <option value="Perissê">Perissê</option>
+              <option value="São Geraldo">São Geraldo</option>
+              <option value="Santo André">Santo André</option>
+              <option value="Suspiro">Suspiro</option>
+              <option value="Varginha">Varginha</option>
+              <option value="Vila Amélia">Vila Amélia</option>
+              <option value="Vila Nova">Vila Nova</option>
+          </select>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="inputName" placeholder="Seu Nome">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="inputPhone" placeholder="Telefone para Contato">
+          </div>
+        </div>
+        <div class="form-row">
+        <div class="form-group col-md-10">
+          <input type="text" class="form-control" id="inputAddress" placeholder="Endereço com Referência">
+        </div>
+        <div class="form-group col-md-2">
+          <input type="text" class="form-control" placeholder="CEP" id="inputZip">
+        </div>
+      </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <select id="inputState" class="form-control">
+              <option selected>Forma de Pagamento</option>
+              <option value="pix">Pix</option>
+              <option value="dinheiro">Dinheiro</option>
+              <option value="cartao">Cartão de Crédito</option>
+              <option value="cartao-debito">Cartão de Débito</option>
+              <option value="link">Link de Pagamento</option>
+            </select>
+          </div>
+        </div>
+        
+      </form>
+      <br><br>
+      <p>Modelo para demostração de designer, os valores são fictícios não sendo possível altera-lós. </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Continuar Comprando</button>
+        <a href=""><button type="button" class="btn btn-success">Fazer Pedidos <ion-icon name="logo-whatsapp"></ion-icon></button> </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- MENU -->
+  <section class="food_section layout_padding-bottom" id="menu">
+    <div class="container">
+      <div class="heading_container heading_center"><br>
+        <h2>
+          Cardápio Online
+        </h2>
+      </div><br><br><br>
+
+      <div class="dropdown-menu-wrapper">
+        <button class="dropdown-btn">Filtrar</button>
+        <div class="dropdown-content">
+          <ul class="filters_menu">
+            <li class="active" data-filter="*">Todos</li>
+            <li data-filter=".temakis">Temaki</li>
+            <li data-filter=".yakisobas">Yakisoba</li>
+            <li data-filter=".rolls">Rolls</li>
+            <li data-filter=".hots">Hots</li>
+            <li data-filter=".combinados">Combinados</li>
+            <li data-filter=".bebidas">Bebidas</li>
+          </ul>
+        </div>
+      </div><br>
+
+      <div class="filters-content">
+        <div class="row grid">
+
+          <div class="col-sm-6 col-lg-4 all combinados">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f1.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Combinado Especial <p>30 peças</p>
+                  </h5>
+                  <p>
+                    10 SASHIMI DE SALMÃO<br>
+                    10 URAMAKI FILADELFIA<br>
+                    10 TROUXINHAS<br><br>
+                  <div class="options">
+                    <h6>
+                      R$ 91,00
+                    </h6>
+                    <button type="button" class="btn-cart" data-toggle="modal" data-target="#exampleModal">
+                      Adicionar <ion-icon data-dismiss="alert" style="color: aliceblue;" name="cart-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all combinados">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f3.png" alt="">
+                </div>
+                <div class="detail-box">
+                   <h5>
+                    Combinado Misto <p>20 peças</p>
+                  </h5>
+                  <p>
+                    5 SASHIMI SALMÃO <br>
+                    5 NIGIRI SKIN <br>
+                    5 HOSOMAKI KAPPA<br>
+                    5 URAMAKI SKIN
+                  </p>
+                  <div class="options">
+                    <h6>
+                      R$ 67,90
+                    </h6>
+                    <button type="button" class="btn-cart" data-toggle="modal" data-target="#exampleModal">
+                      Adicionar <ion-icon data-dismiss="alert" style="color: aliceblue;" name="cart-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all combinados">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f4.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                   Combinado Misto <p>30 peças</p>
+                 </h5>
+                 <p>
+                   10 SASHIMI ATUM <br>
+                   10 NIGIRI SALMÃO <br>
+                   5 URAMAKI SKIN<br>
+                   5 URAMAKI CALIFORNIA
+                 </p>
+                 <div class="options">
+                   <h6>
+                     R$ 80,90
+                   </h6>
+                   <button type="button" class="btn-cart" data-toggle="modal" data-target="#exampleModal">
+                     Adicionar <ion-icon data-dismiss="alert" style="color: aliceblue;" name="cart-outline"></ion-icon>
+                   </button>
+                 </div>
+               </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all hots">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f2.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Hot Fila
+                  </h5>
+                  <p>
+                    10 PEÇAS
+                  </p>
+                  <div class="options">
+                    <h6>
+                      R$ 29,90
+                    </h6>
+                    <button type="button" class="btn-cart" data-toggle="modal" data-target="#exampleModal">
+                      Adicionar <ion-icon data-dismiss="alert" style="color: aliceblue;" name="cart-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all hots">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f5.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Hot Fila
+                  </h5>
+                  <p>
+                    5 PEÇAS
+                  </p>
+                  <div class="options">
+                    <h6>
+                      R$ 14,90
+                    </h6>
+                    <button type="button" class="btn-cart" data-toggle="modal" data-target="#exampleModal">
+                      Adicionar <ion-icon data-dismiss="alert" style="color: aliceblue;" name="cart-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all rolls">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f6.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Roll Salmão
+                  </h5>
+                  <p>
+                    12 PEÇAS
+                  </p>
+                  <div class="options">
+                    <h6>
+                      R$ 29,90
+                    </h6>
+                    <button type="button" class="btn-cart" data-toggle="modal" data-target="#exampleModal">
+                      Adicionar <ion-icon data-dismiss="alert" style="color: aliceblue;" name="cart-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all yakisobas">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f7.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Yakisoba 
+                  </h5>
+                  <p>
+                    CARNE E LEGUMES
+                  </p>
+                  <div class="options">
+                    <h6>
+                      R$ 35,90
+                    </h6>
+                    <button type="button" class="btn-cart" data-toggle="modal" data-target="#exampleModal">
+                      Adicionar <ion-icon data-dismiss="alert" style="color: aliceblue;" name="cart-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all temakis">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f8.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Big Temaki
+                  </h5>
+                  <p>
+                    SALMÃO FRESCO E CREAM CHEESE
+                  </p>
+                  <div class="options">
+                    <h6>
+                      R$ 35,90
+                    </h6>
+                    <button type="button" class="btn-cart" data-toggle="modal" data-target="#exampleModal">
+                      Adicionar <ion-icon data-dismiss="alert" style="color: aliceblue;" name="cart-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all bebidas">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f11.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Refrigerante 
+                  </h5>
+                  <p>
+                    Lata 350ml
+                  </p>
+                  <div class="options">
+                    <h6>
+                      R$ 6,00
+                    </h6>
+                    <button type="button" class="btn-cart" data-toggle="modal" data-target="#exampleModal">
+                      Adicionar <ion-icon data-dismiss="alert" style="color: aliceblue;" name="cart-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about_section layout_padding" id="about">
+    <div class="container  ">
+
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Conheça o Japas
+              </h2>
+            </div>
+            <p>
+              Texto exemplo aqui: Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+              the middle of text. All
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- LOCATION -->
+  <section class="book_section layout_padding" id="location">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Onde estamos
+        </h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="map_container ">
+            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+              <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                  var setting = {"query":"Nova Friburgo, RJ, Brasil","width":800,"height":600,"satellite":false,"zoom":12,"placeId":"ChIJgxIVb5OKlwARxBexv8AWK_8","cid":"0xff2b16c0bfb117c4","coords":[-22.2887261,-42.5340796],"cityUrl":"/brazil/nova-friburgo-62332","cityAnchorText":"Mapa de Nova Friburgo, Rio de Janeiro, Brasil","lang":"pt","queryString":"Nova Friburgo, RJ, Brasil","centerCoord":[-22.2887261,-42.5340796],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1136893"};
+                  var d = document;
+                  var s = d.createElement('script');
+                  s.src = 'https://1map.com/js/script-for-user.js?embed_id=1136893';
+                  s.async = true;
+                  s.onload = function (e) {
+                    window.OneMap.initMap(setting)
+                  };
+                  var to = d.getElementsByTagName('script')[0];
+                  to.parentNode.insertBefore(s, to);
+                })();</script><a href="https://1map.com/pt/map-embed">1 Map</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Nossos Contatos
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Rua Alegre - Bairro Feliz
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  (12) 3456 - 7890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  contato@japas.com.br
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              Japas
+            </a>
+            <p>
+              Texto exemplo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis inventore quaera.
+            </p>
+            <div class="footer_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Horários
+          </h4>
+          <p>
+            Quinta à Domingo
+          </p>
+          <p>
+           18:00 ás 23:00
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> Japas.<br>
+          Desenvolvido por <a href="https://sorayacop.com.br" target="_blank"><b> Soraya Cop</b></a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+
+</body>
+</html>
